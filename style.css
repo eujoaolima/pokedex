@@ -9,34 +9,35 @@
 
 body {
     background-image: linear-gradient(45deg, lightblue, palegreen, #333);
-    height: 110vh;
     text-align: center;
+    min-height: 100vh;
 }
 
 main {
     display: inline-block;
     margin-top: 2%;
+    padding: 15px;
     position: relative;
 }
 
 .pokedex {
     width: 100%;
-    padding: 15px;
-    max-width: 450px;
+    max-width: 425px;
 }
 
 .pokemon__image {
     position: absolute;
-    left: 150px;
-    top: 210px;
-    height: 20%;
+    bottom: 53%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
 }
 
 .pokemon__data {
     position: absolute;
     font-weight: 600;
     color: #aaa;
-    top: 51%;
+    top: 52%;
     right: 44.5%;
     font-size: clamp(8px, 5vw, 25px);
 }
@@ -46,13 +47,17 @@ main {
     text-transform: capitalize; 
 }
 
-.input__nameSearch {
+.form {
     position: absolute;
-    padding: 15px;
-    height: 45px;
-    width: 260px;
-    top: 470px;
-    left: 700px;
+    width: 16%;
+    height: 15%;
+    top: 62.5%;
+    left: 41%;
+}
+
+.input__nameSearch {
+    width: 100%;
+    padding: 1%;
     outline: none;
     font-weight: 600;
     border: 1px solid #333;
@@ -63,21 +68,21 @@ main {
 
 .btns {
     position: absolute;
-    bottom: 160px;
-    left: 718px;
-    width: 650px;
-    height: 40px;
+    bottom: 20%;
+    left: 43.1%;
+    width: 20%;
+    height: 5%;
+    transform: translate(-8%, 0);
     padding: 5px;
     display: flex;
     gap: 75px;
 }
 
 .buttonBtn-next, .buttonBtn-prev {
-    width: 70px;
-    max-width: 40%;
+    width: 25%;
     display: flex;
     gap: 30px;
-    padding: 4px;
+    padding: 1%;
     border: 1px solid #333;
     border-radius: 50px;
     font-size: clamp(8px, 5vw, 1rem);
